@@ -29,6 +29,6 @@ jobs:
         cache: maven
     - name: Build with Maven
       run:
-         mvn -B package --file pom.xml
+         mvn -X switch --file pom.xml
          mvn clean test
 
